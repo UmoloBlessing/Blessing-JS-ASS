@@ -46,7 +46,7 @@ if(dolphins > koalas) {
     console.log('No winner');
 };
 
-// // BONUS 1
+// // // BONUS 1
 
 const dolphinsBonus1 = (97 + 112 + 101) / 3 ;
 const koalasBonus1 = (88 + 91 + 110) / 3;
@@ -61,7 +61,7 @@ if(dolphinsBonus1 > koalasBonus1 && dolphinsBonus1 >= 100) {
     console.log('No winner');
 };
 
-// // BONUS 2
+// // // BONUS 2
 
 const dolphinsBonus2 = (97 + 112 + 101) / 3;
 const koalasBonus2 = (109 + 95 + 106) / 3;
@@ -77,9 +77,9 @@ if (dolphinsBonus2 > koalasBonus2 && dolphinsBonus2 >= 100) {
 };
 
 
-// TEST 3
+// // TEST 3
 
-// Test data
+// // Test data
 
 const billValue = prompt('Check your tip and total value. (Bill Data: 275, 40, 430)');
 
@@ -87,11 +87,11 @@ const billValue = prompt('Check your tip and total value. (Bill Data: 275, 40, 4
 
 const bill = parseFloat(billValue);
 
-// // if (bill >= 50 && bill <= 300){
-// //     tip = 0.15 * bill;    
-// //   } else {
-// //     tip = 0.2 * bill;
-// //   }
+// // // if (bill >= 50 && bill <= 300){
+// // //     tip = 0.15 * bill;    
+// // //   } else {
+// // //     tip = 0.2 * bill;
+// // //   }
 
 const tip = (bill >= 50 && bill <= 300) ? 0.15 * bill : 0.2 * bill;
 
@@ -104,52 +104,54 @@ if(isNaN(billValue)) {
 };
 
 
+// DATA BILL 275
 
-// const billValue1 = 275;
+const billValue1 = 275;
 
-// let tip1;
+let tip1;
 
-// if(billValue1 >= 50 && billValue1 <=300){
-//     tip1 = 0.15 * billValue1;
-// } else {
-//     tip1 = 0.2 * billValue1;
-// }
+if(billValue1 >= 50 && billValue1 <=300){
+    tip1 = 0.15 * billValue1;
+} else {
+    tip1 = 0.2 * billValue1;
+}
 
-// const totalValue1 = (billValue1 + tip1);
+const totalValue1 = (billValue1 + tip1);
 
-// console.log(`The bill was ${billValue1}, the tip was ${tip1}, and the total Value is ${totalValue1}`);
+console.log(`The bill was ${billValue1}, the tip was ${tip1}, and the total Value is ${totalValue1}`);
+
+// DATA BILL 40
+
+const billValue2 = 40;
+
+let tip2;
+
+if(billValue2 >= 50 && billValue2 <=300){
+    tip2 = 0.15 * billValue2;
+} else {
+    tip2 = 0.2 * billValue2;
+}
+
+const totalValue2 = (billValue2 + tip2);
+
+console.log(`The bill was ${billValue2}, the tip was ${tip2}, and the total Value is ${totalValue2}`);
 
 
+// DATA BILL 430
 
-// const billValue2 = 40;
+const billValue3 = 430;
 
-// let tip2;
+let tip3;
 
-// if(billValue2 >= 50 && billValue2 <=300){
-//     tip2 = 0.15 * billValue2;
-// } else {
-//     tip2 = 0.2 * billValue2;
-// }
+if(billValue3 >= 50 && billValue3 <=300){
+    tip3 = 0.15 * billValue3;
+} else {
+    tip3 = 0.2 * billValue3;
+}
 
-// const totalValue2 = (billValue2 + tip2);
+const totalValue3 = (billValue3 + tip3);
 
-// console.log(`The bill was ${billValue2}, the tip was ${tip2}, and the total Value is ${totalValue2}`);
-
-
-
-// const billValue3 = 430;
-
-// let tip3;
-
-// if(billValue3 >= 50 && billValue3 <=300){
-//     tip3 = 0.15 * billValue3;
-// } else {
-//     tip3 = 0.2 * billValue3;
-// }
-
-// const totalValue3 = (billValue3 + tip3);
-
-// console.log(`The bill was ${billValue3}, the tip was ${tip3}, and the total Value is ${totalValue3}`);
+console.log(`The bill was ${billValue3}, the tip was ${tip3}, and the total Value is ${totalValue3}`);
 
 
 
@@ -174,6 +176,8 @@ console.log(country3);
 
 // FUNCTION DECLARATION
 
+// FIRST INSTANCE
+
 function percentageOfWorld1(population) {
     const worldPopulation = 7900;
     const percentage = (population / worldPopulation) * 100;
@@ -194,8 +198,24 @@ const canadaPopulation = 2441;
 const canadaPercentage = percentageOfWorld1(canadaPopulation);
 console.log(`Canada has ${canadaPopulation} millions of people, so it's about ${canadaPercentage}% of the world population.`);
 
+// SECOND INSTANCE
 
-// FUNCTION EXPRESSION
+
+function percentageOfWorld5(country, population, percentage){
+    const details1 = `${country} has ${population} millions of people, so it's about ${percentage}% of the world population.`;
+    return details1;
+}
+const data0 = percentageOfWorld5('China', 1441, 18.2);
+console.log(data0);
+
+const data1 = percentageOfWorld5('Japan', 4441, 56.2);
+console.log(data1);
+
+const data2 = percentageOfWorld5('Canada', 2441, 30.9);
+console.log(data2);
+
+
+// // // FUNCTION EXPRESSION
 
 const population2 = function percentageOfWorld2(country, population, percentage) {
     const populationDetails2 = `${country} has ${population} millions of people, so it's about ${percentage}% of the world population.`;
@@ -213,7 +233,9 @@ const details4 = population2('Canada', 5142, 56.9);
 console.log(details4);
 
 
-// BONUS
+
+// // // BONUS
+
 
 const percentageOfWorld3 = (country, population, percentage) => `${country} has ${population} millions of people, so it's about ${percentage}% of the world population.`;
 const details5 = percentageOfWorld3('China', 1441, 36.6);
@@ -234,6 +256,9 @@ console.log(details7);
 const populations = [1280, 6243, 2435, 1220];
 
 console.log(populations.length === 4);
+
+
+// FIRST INSTANCE
 
 const percentages = [16.2, 79, 30.8, 15.4];
 
@@ -261,10 +286,21 @@ console.log(norwayPercentage);
 
 
 
+// SECOND INSTANCE
 
 
+function percentageOfWorld4(country, population, percentage){
+    const details2 = `${country} has ${population} millions of people, so it's about ${percentage}% of the world population.`;
+    return details2;
+}
+const data3 = percentageOfWorld4('China', 1280, 16.2);
+console.log(data3);
 
+const data4 = percentageOfWorld4('Japan', 6243, 79);
+console.log(data4);
 
+const data5 = percentageOfWorld4('Canada', 2435, 30.8);
+console.log(data5);
 
-
-
+const data6 = percentageOfWorld4('UK', 1220, 15.4);
+console.log(data6);
