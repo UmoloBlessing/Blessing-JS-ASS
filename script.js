@@ -221,7 +221,6 @@ const details4 = population2('Canada', 5142, 56.9);
 console.log(details4);
 
 
-
 // // // BONUS
 
 
