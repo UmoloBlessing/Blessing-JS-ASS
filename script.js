@@ -108,13 +108,9 @@ if(isNaN(billValue)) {
 
 const billValue1 = 275;
 
-let tip1;
+// let tip1;
 
-if(billValue1 >= 50 && billValue1 <=300){
-    tip1 = 0.15 * billValue1;
-} else {
-    tip1 = 0.2 * billValue1;
-}
+const tip1 = (billValue1 >= 50 && billValue1 <= 300) ? 0.15 * billValue1 : 0.2 * billValue1;
 
 const totalValue1 = (billValue1 + tip1);
 
@@ -124,13 +120,9 @@ console.log(`The bill was ${billValue1}, the tip was ${tip1}, and the total Valu
 
 const billValue2 = 40;
 
-let tip2;
+// let tip2;
 
-if(billValue2 >= 50 && billValue2 <=300){
-    tip2 = 0.15 * billValue2;
-} else {
-    tip2 = 0.2 * billValue2;
-}
+const tip2 = (billValue2 >= 50 && billValue2 <= 300) ? 0.15 * billValue2 : 0.2 * billValue2;
 
 const totalValue2 = (billValue2 + tip2);
 
@@ -141,13 +133,9 @@ console.log(`The bill was ${billValue2}, the tip was ${tip2}, and the total Valu
 
 const billValue3 = 430;
 
-let tip3;
+// let tip3;
 
-if(billValue3 >= 50 && billValue3 <=300){
-    tip3 = 0.15 * billValue3;
-} else {
-    tip3 = 0.2 * billValue3;
-}
+const tip3 = (billValue3 >= 50 && billValue3 <= 300) ? 0.15 * billValue3 : 0.2 * bill;
 
 const totalValue3 = (billValue3 + tip3);
 
@@ -198,6 +186,7 @@ const canadaPopulation = 2441;
 const canadaPercentage = percentageOfWorld1(canadaPopulation);
 console.log(`Canada has ${canadaPopulation} millions of people, so it's about ${canadaPercentage}% of the world population.`);
 
+
 // SECOND INSTANCE
 
 
@@ -224,7 +213,6 @@ const population2 = function percentageOfWorld2(country, population, percentage)
 
 const details2 = population2('China', 1441, 36.6);
 console.log(details2);
-
 
 const details3 = population2('Japan', 2345, 34.7);
 console.log(details3);
