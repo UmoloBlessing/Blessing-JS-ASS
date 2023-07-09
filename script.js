@@ -237,8 +237,6 @@ console.log(details7);
 
 
 
-
-
 // TEST 6
 
 const populations = [1280, 6243, 2435, 1220];
