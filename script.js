@@ -49,7 +49,7 @@ if(dolphins > koalas) {
 // // // BONUS 1
 
 const dolphinsBonus1 = (97 + 112 + 101) / 3 ;
-const koalasBonus1 = (88 + 91 + 110) / 3;
+const koalasBonus1 = (109 + 95 + 123) / 3;
 
 if(dolphinsBonus1 > koalasBonus1 && dolphinsBonus1 >= 100) {
     console.log('Dolphins is the winner');
